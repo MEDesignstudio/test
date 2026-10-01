@@ -1,0 +1,17 @@
+# Laufzeitdaten (werden automatisch unter data/ angelegt)
+data/logs/*.jsonl
+data/contacts.json
+data/registrations.json
+data/donations.json
+data/ratelimit.json
+data/loginAttempts.json
+data/.secret
+data/*.tmp
+sitemap.xml
+
+# System
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+node_modules/

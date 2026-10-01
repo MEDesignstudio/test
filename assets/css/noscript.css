@@ -1,0 +1,5 @@
+/* Ohne JavaScript: alle Einblendungen sofort sichtbar, Formularschritte untereinander */
+.reveal { opacity: 1 !important; translate: none !important; filter: none !important; scale: none !important; }
+.form-step { display: block !important; }
+.step-progress, .form-nav [data-step-next], .form-nav [data-step-prev] { display: none !important; }
+.mesh-rail, .to-top { display: none !important; }

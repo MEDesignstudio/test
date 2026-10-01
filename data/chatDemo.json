@@ -1,0 +1,14 @@
+{
+    "_hinweis": "Antworten für den Demo-Modus des Chats (solange mesh.chat.enabled in config.json false ist).",
+    "default": "Ich laufe gerade im Demo-Modus – das echte Mesh ist noch nicht freigeschaltet. Frag mich gern, wie GemeinsamKI funktioniert, welche Macs mitmachen können oder wie du dich für die Beta anmeldest.",
+    "answers": [
+        { "keywords": ["hallo", "hi", "hey", "moin", "servus", "guten"], "answer": "Hallo und herzlich willkommen! Ich bin die Demo des GemeinsamKI-Chats. Bald beantworten hier echte Modelle aus dem Mesh deine Fragen – betrieben von Macs aus der Community." },
+        { "keywords": ["was ist", "gemeinsamki", "idee", "mesh"], "answer": "GemeinsamKI verbindet Macs in ganz Deutschland zu einem KI-Netz. Jeder Mac teilt freie Rechenleistung – und alle können die Modelle im Mesh nutzen. Anschließen. Freigeben. Mitnutzen." },
+        { "keywords": ["welche mac", "mac", "m1", "m2", "m3", "m4", "m5", "apple"], "answer": "Mitmachen können alle Macs mit Apple Silicon (M1 bis M5). Mit mehr Arbeitsspeicher lassen sich größere Modelle ausführen – ab 16 GB wird es richtig spannend." },
+        { "keywords": ["kosten", "kostet", "preis", "geld", "gratis", "kostenlos"], "answer": "Die Beta ist kostenlos. Unser Grundsatz lautet: Wer teilt, nutzt mit." },
+        { "keywords": ["sicher", "daten", "datenschutz", "dsgvo", "privat"], "answer": "Verbindungen sind verschlüsselt, Inhalte werden auf den rechnenden Macs nicht gespeichert, und das Mesh läuft in Deutschland. Mehr dazu auf der Seite „Sicherheit“." },
+        { "keywords": ["vs code", "vscode", "plugin", "code", "programm"], "answer": "Mit dem VS-Code-Plugin nutzt du das Mesh direkt im Editor: Vervollständigung, Erklärungen und Refactoring – mit Modellen aus der Community." },
+        { "keywords": ["nacht", "zeitplan", "wann", "zeit", "stop", "play"], "answer": "Du bestimmst, wann dein Mac teilt: per Play und Stop oder mit Zeitplan – zum Beispiel nur nachts zwischen 22 und 7 Uhr." },
+        { "keywords": ["mitmachen", "anmelden", "beta", "warteliste", "teilnehmen"], "answer": "Super! Auf der Seite „Mitmachen“ sicherst du dir in zwei Minuten deinen Beta-Platz. Wir melden uns, sobald es losgeht." }
+    ]
+}

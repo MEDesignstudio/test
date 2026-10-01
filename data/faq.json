@@ -1,0 +1,42 @@
+[
+    {
+        "category": "Allgemein",
+        "items": [
+            { "q": "Was ist GemeinsamKI?", "a": "Ein KI-Netz aus Macs in Deutschland. Jeder Mac stellt freie Rechenleistung bereit – zusammen bilden sie eine KI, die alle per Chat oder VS Code nutzen können.", "featured": true },
+            { "q": "Was bedeutet „Mesh“?", "a": "Viele Geräte, die über einen zentralen Hub verbunden sind. Der Hub schickt jede Anfrage an einen passenden Mac, der gerade frei ist und das gewünschte Modell geladen hat." },
+            { "q": "Was kostet die Teilnahme?", "a": "Die Beta ist kostenlos. Unser Grundsatz: Wer teilt, nutzt mit. Faire Regeln für die Zeit nach der Beta erarbeiten wir offen mit der Community.", "featured": true }
+        ]
+    },
+    {
+        "category": "Mac & App",
+        "items": [
+            { "q": "Welche Macs können mitmachen?", "a": "Macs mit Apple Silicon – also M1 bis M5. Je mehr Arbeitsspeicher, desto größere Modelle kann dein Mac ausführen. Ab 16 GB wird es richtig spannend.", "featured": true },
+            { "q": "Wird mein Mac dadurch langsamer?", "a": "Nur, während er rechnet. Du bestimmst per Play, Stop oder Zeitplan, wann das passiert – zum Beispiel nachts. Außerdem legst du fest, wie viel Speicher er teilen darf.", "featured": true },
+            { "q": "Kann ich festlegen, wann mein Mac teilt?", "a": "Ja. Wähle „Immer“, „Nur nachts“, „Nach Feierabend“, „Am Wochenende“ oder lege eigene Zeiten fest. Ein Klick auf Stop beendet die Freigabe sofort." },
+            { "q": "Was ist mit Strom und Akku?", "a": "Wir empfehlen, nur im Netzbetrieb zu teilen – am besten per Zeitplan, wenn du deinen Mac ohnehin nicht nutzt." },
+            { "q": "Welche Software läuft auf meinem Mac?", "a": "Die GemeinsamKI-App und eine bewährte lokale KI-Laufzeit wie LM Studio. Die Einrichtung erklären wir Schritt für Schritt." }
+        ]
+    },
+    {
+        "category": "Nutzung",
+        "items": [
+            { "q": "Wie nutze ich das Mesh?", "a": "Im Chat direkt im Browser – bald unter chat.gemeinsamki.de – oder mit dem VS-Code-Plugin beim Programmieren.", "featured": true },
+            { "q": "Welche Modelle gibt es?", "a": "Alles, was die Macs im Mesh geladen haben – zum Beispiel offene Modelle wie GPT-OSS oder Qwen. Die Auswahl wächst mit jedem neuen Mac." },
+            { "q": "Brauche ich einen Mac, um mitzunutzen?", "a": "Zum Nutzen reichen ein Browser oder VS Code. Wer zusätzlich einen Mac teilt, lässt das Mesh wachsen." }
+        ]
+    },
+    {
+        "category": "Sicherheit",
+        "items": [
+            { "q": "Sind meine Daten sicher?", "a": "Alle Verbindungen sind verschlüsselt, Inhalte werden auf den rechnenden Macs nicht gespeichert und das Mesh läuft in Deutschland. Alle Details findest du auf unserer Sicherheitsseite.", "featured": true },
+            { "q": "Kann jemand auf meine Dateien zugreifen?", "a": "Nein. Die App stellt ausschließlich Rechenleistung für KI-Modelle bereit – ohne Zugriff auf deine Dateien, Fotos oder Programme." }
+        ]
+    },
+    {
+        "category": "Projekt",
+        "items": [
+            { "q": "Wer steckt hinter GemeinsamKI?", "a": "Eine Initiative aus Deutschland, die KI-Rechenleistung bündeln will – damit KI hier läuft und uns allen gehört." },
+            { "q": "Wie kann ich helfen?", "a": "Mac anmelden, weitersagen, spenden oder mitentwickeln. Jeder Beitrag macht das Mesh stärker." }
+        ]
+    }
+]

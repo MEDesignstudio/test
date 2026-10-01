@@ -1,0 +1,14 @@
+{
+    "name": "gemeinsamki/website",
+    "description": "Website für GemeinsamKI – das deutsche KI-Mesh aus Macs",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": ">=8.0",
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}

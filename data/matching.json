@@ -1,0 +1,16 @@
+{
+    "_hinweis": "Zuordnung Bildschlüssel => Datei (relativ zu assets/). Bilder werden ausschließlich über img()/imgSrc() in app.php geladen.",
+    "brand.logo": { "src": "img/logo.svg", "alt": "GemeinsamKI – Anschließen. Freigeben. Mitnutzen.", "width": 1489, "height": 400, "loading": "eager" },
+    "brand.logoLight": { "src": "img/logo-light.svg", "alt": "GemeinsamKI – Anschließen. Freigeben. Mitnutzen.", "width": 1489, "height": 400, "loading": "lazy" },
+    "brand.wordmark": { "src": "img/wordmark.svg", "alt": "GemeinsamKI", "width": 1428, "height": 280, "loading": "eager" },
+    "brand.wordmarkLight": { "src": "img/wordmark-light.svg", "alt": "GemeinsamKI", "width": 1428, "height": 280, "loading": "eager" },
+    "brand.mark": { "src": "img/favicon.svg", "alt": "GemeinsamKI Signet", "width": 512, "height": 512 },
+    "brand.logoPng": { "src": "img/logo.png", "alt": "GemeinsamKI Logo", "width": 1292, "height": 440 },
+    "icon.favicon": { "src": "img/favicon.svg", "alt": "" },
+    "icon.favicon32": { "src": "img/favicon-32.png", "alt": "", "width": 32, "height": 32 },
+    "icon.apple": { "src": "img/apple-touch-icon.png", "alt": "", "width": 180, "height": 180 },
+    "icon.192": { "src": "img/icon-192.png", "alt": "", "width": 192, "height": 192 },
+    "icon.512": { "src": "img/icon-512.png", "alt": "", "width": 512, "height": 512 },
+    "og.default": { "src": "img/og-default.jpg", "alt": "GemeinsamKI – Das deutsche KI-Mesh aus Macs", "width": 1200, "height": 630 },
+    "sprite.icons": { "src": "img/icons.svg", "alt": "" }
+}

@@ -1,0 +1,12 @@
+# GemeinsamKI – robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin.php
+Disallow: /controller.php
+Disallow: /data/
+Disallow: /views/
+Disallow: /vendor/
+Disallow: /*?danke=
+Disallow: /*?fehler=
+
+Sitemap: https://gemeinsamki.de/sitemap.xml

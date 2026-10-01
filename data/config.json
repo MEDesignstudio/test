@@ -1,0 +1,116 @@
+{
+    "_hinweis": "Zentrale Konfiguration. Alle Unternehmens-/Vereinsdaten werden ausschließlich hier gepflegt. Werte in [eckigen Klammern] bitte ersetzen.",
+    "site": {
+        "name": "GemeinsamKI",
+        "tagline": "Anschließen. Freigeben. Mitnutzen.",
+        "claim": "Das deutsche KI-Mesh aus Macs",
+        "primaryDomain": "gemeinsamki.de",
+        "aliasDomains": ["gemeinsamki.org", "www.gemeinsamki.de", "www.gemeinsamki.org"],
+        "redirectAliases": true,
+        "forceHttps": false,
+        "language": "de-DE",
+        "locale": "de_DE",
+        "themeColor": "#111111",
+        "chatUrl": "https://chat.gemeinsamki.de",
+        "downloadUrl": "",
+        "vscodeMarketplaceUrl": "",
+        "launchState": "beta",
+        "showWaitlistCountFrom": 25
+    },
+    "organization": {
+        "schemaType": "NGO",
+        "name": "GemeinsamKI",
+        "legalName": "[GemeinsamKI e. V. i. G.]",
+        "legalForm": "[eingetragener Verein in Gründung]",
+        "foundingDate": "2026",
+        "representatives": ["[Vorname Nachname] (Vorstand)"],
+        "contentResponsible": "[Vorname Nachname]",
+        "address": {
+            "street": "[Musterstraße 1]",
+            "zip": "[12345]",
+            "city": "[Musterstadt]",
+            "region": "[Bundesland]",
+            "country": "Deutschland",
+            "countryCode": "DE"
+        },
+        "phone": "+49 123 4567890",
+        "phoneDisplay": "0123 – 456 78 90",
+        "whatsapp": "491234567890",
+        "email": "info@gemeinsamki.de",
+        "emailSupport": "hallo@gemeinsamki.de",
+        "register": {
+            "court": "[Amtsgericht Musterstadt]",
+            "number": "[VR 0000]"
+        },
+        "vatId": "",
+        "taxNumber": "",
+        "charitable": "[Gemeinnützigkeit beantragt]",
+        "openingHours": "Mo–Fr 9–17 Uhr"
+    },
+    "bank": {
+        "accountHolder": "[GemeinsamKI e. V.]",
+        "bankName": "[Musterbank]",
+        "iban": "[DE00 0000 0000 0000 0000 00]",
+        "bic": "[XXXXDEXXXXX]",
+        "reference": "Spende GemeinsamKI"
+    },
+    "social": {
+        "github": "",
+        "linkedin": "",
+        "mastodon": "",
+        "instagram": "",
+        "youtube": ""
+    },
+    "smtp": {
+        "enabled": false,
+        "host": "[smtp.example.com]",
+        "port": 587,
+        "secure": "tls",
+        "username": "[info@gemeinsamki.de]",
+        "password": "[SMTP-PASSWORT]",
+        "fromEmail": "info@gemeinsamki.de",
+        "fromName": "GemeinsamKI"
+    },
+    "notifications": {
+        "adminEmail": "info@gemeinsamki.de",
+        "sendConfirmation": true
+    },
+    "admin": {
+        "username": "admin",
+        "passwordHash": "$2y$10$Vwob4KUtTSpKDn7VazaVKOKwUAKBriOnIoYic3BsQqXeoKNghN0Z2",
+        "sessionMinutes": 120,
+        "maxLoginAttempts": 5,
+        "lockMinutes": 15
+    },
+    "security": {
+        "appSecret": "",
+        "formMinSeconds": 3,
+        "formRateLimit": 5,
+        "formRateWindowMinutes": 10
+    },
+    "analytics": {
+        "enabled": true,
+        "sessionTimeoutMinutes": 30,
+        "retentionMonths": 14,
+        "excludeBots": true,
+        "ignoreIps": []
+    },
+    "mesh": {
+        "chat": {
+            "enabled": false,
+            "apiUrl": "[https://hub.gemeinsamki.de]",
+            "apiKey": "",
+            "defaultModel": "openai/gpt-oss-20b",
+            "maxTokens": 800,
+            "temperature": 0.7,
+            "timeoutSeconds": 60,
+            "rateLimit": 20,
+            "rateWindowMinutes": 10,
+            "systemPrompt": "Du bist der freundliche Assistent von GemeinsamKI, einem deutschen KI-Mesh aus Macs. Antworte hilfsbereit, präzise und auf Deutsch."
+        },
+        "demoModels": [
+            { "id": "openai/gpt-oss-20b", "type": "LLM", "label": "GPT-OSS 20B" },
+            { "id": "qwen/qwen3.6-35b-a3b", "type": "VLM", "label": "Qwen 3.6 35B" }
+        ]
+    }
+}
