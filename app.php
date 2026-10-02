@@ -359,7 +359,7 @@ function config(?string $path = null, $default = null)
 {
     static $config = null;
     if ($config === null) {
-        $config = readJson(dataFile('config'), []);
+        $config = applyEnvOverrides(readJson(dataFile('config'), []));
     }
     if ($path === null) {
         return $config;
@@ -372,6 +372,52 @@ function config(?string $path = null, $default = null)
         $value = $value[$key];
     }
     return $value;
+}
+
+/** Umgebungsvariablen (z. B. aus Docker/.env) überschreiben einzelne Werte aus config.json. */
+const ENV_OVERRIDES = [
+    'GKI_PRIMARY_DOMAIN' => 'site.primaryDomain',
+    'GKI_FORCE_HTTPS' => 'site.forceHttps',
+    'GKI_APP_SECRET' => 'security.appSecret',
+    'GKI_SMTP_ENABLED' => 'smtp.enabled',
+    'GKI_SMTP_HOST' => 'smtp.host',
+    'GKI_SMTP_PORT' => 'smtp.port',
+    'GKI_SMTP_SECURE' => 'smtp.secure',
+    'GKI_SMTP_USERNAME' => 'smtp.username',
+    'GKI_SMTP_PASSWORD' => 'smtp.password',
+    'GKI_SMTP_FROM' => 'smtp.fromEmail',
+    'GKI_NOTIFY_EMAIL' => 'notifications.adminEmail',
+    'GKI_CHAT_ENABLED' => 'mesh.chat.enabled',
+    'GKI_CHAT_API_URL' => 'mesh.chat.apiUrl',
+    'GKI_CHAT_API_KEY' => 'mesh.chat.apiKey',
+    'GKI_CHAT_MODEL' => 'mesh.chat.defaultModel',
+];
+
+function applyEnvOverrides(array $config): array
+{
+    foreach (ENV_OVERRIDES as $env => $path) {
+        $value = getenv($env);
+        if ($value === false || $value === '') {
+            continue;
+        }
+        if (in_array(strtolower($value), ['true', 'yes', 'on'], true)) {
+            $value = true;
+        } elseif (in_array(strtolower($value), ['false', 'no', 'off'], true)) {
+            $value = false;
+        } elseif (ctype_digit($value)) {
+            $value = (int) $value;
+        }
+        $ref = &$config;
+        foreach (explode('.', $path) as $key) {
+            if (!isset($ref[$key]) || !is_array($ref[$key])) {
+                $ref[$key] = $ref[$key] ?? [];
+            }
+            $ref = &$ref[$key];
+        }
+        $ref = $value;
+        unset($ref);
+    }
+    return $config;
 }
 
 function updateConfig(string $path, $newValue): bool

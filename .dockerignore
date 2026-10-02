@@ -1,0 +1,16 @@
+.git
+.gitignore
+.idea
+.vscode
+node_modules
+*.md
+.env
+sitemap.xml
+data/logs/*.jsonl
+data/contacts.json
+data/registrations.json
+data/donations.json
+data/ratelimit.json
+data/loginAttempts.json
+data/.secret
+data/*.tmp

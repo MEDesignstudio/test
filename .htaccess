@@ -57,9 +57,9 @@ ServerSignature Off
 
 # ---- Sicherheits-Header (für statische Dateien; PHP setzt eigene) ---------
 <IfModule mod_headers.c>
-    Header always set X-Content-Type-Options "nosniff"
-    Header always set X-Frame-Options "SAMEORIGIN"
-    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
     Header always unset X-Powered-By
     Header unset X-Powered-By
 </IfModule>
